@@ -10,7 +10,7 @@ class MY_Controller extends CI_Controller {
         $this->output->set_header('Pragma: no-cache');
         $this->output->set_header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
 		
-		if ($this->config->item('installed') == TRUE) {
+		if ($this->config->item('installed') == FALSE) {
             redirect(site_url('install'));
 		}
 		
